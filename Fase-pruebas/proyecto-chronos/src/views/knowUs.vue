@@ -66,8 +66,8 @@
 <script setup>
 
 import breadCrumbs from '../components/breadCrumbs.vue'
-import knowUs1 from '../assets/KnowUs1.jpg';
-import knowUs2 from '../assets/KnowUs2.jpg';
-import knowUs3 from '../assets/KnowUs3.jpg';
+import knowUs1 from '../assets/knowUs1.jpg';
+import knowUs2 from '../assets/knowUs2.jpg';
+import knowUs3 from '../assets/knowUs3.jpg';
 
 </script>
