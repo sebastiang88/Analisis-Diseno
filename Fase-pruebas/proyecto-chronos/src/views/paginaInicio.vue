@@ -142,4 +142,5 @@ const irARuta = (ruta) => {
 console.log(`Simulando navegación a la sección: ${ruta}`);
 };
 
+
 </script>

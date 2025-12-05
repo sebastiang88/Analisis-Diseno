@@ -9,5 +9,33 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    <script>
+        (function (m, a, z, e) {
+          var s, t, u, v;
+          try {
+            t = m.sessionStorage.getItem('maze-us');
+          } catch (err) {}
+
+          if (!t) {
+            t = new Date().getTime();
+            try {
+              m.sessionStorage.setItem('maze-us', t);
+            } catch (err) {}
+          }
+
+          u = document.currentScript || (function () {
+            var w = document.getElementsByTagName('script');
+            return w[w.length - 1];
+          })();
+          v = u && u.nonce;
+
+          s = a.createElement('script');
+          s.src = z + '?apiKey=' + e;
+          s.async = true;
+          if (v) s.setAttribute('nonce', v);
+          a.getElementsByTagName('head')[0].appendChild(s);
+          m.mazeUniversalSnippetApiKey = e;
+        })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', '13b0d446-5a34-4def-a87f-20196f6b6b8b');
+    </script>
   </body>
 </html>
